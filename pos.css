@@ -31,6 +31,7 @@ section {
   min-height: 300px;
   display: flex;
   justify-content: space-between;
+  align-items:
 }
 
 .col {
@@ -42,39 +43,52 @@ section {
 .trolley-grey {
   background: #7D7C84;
   flex-grow: 1;
-	order: 6
+  order: 6
 }
 
 .sea-green {
   background: #2D93AD;
   flex-grow: 1;
-	order: 5
+  order: 5
 }
 
 .middle-red {
   background: #DE8F6E;
   flex-grow: 1;
-	order: 4
+  order: 4
 }
 
 .black {
   background: #000;
   flex-grow: 1;
-	order: 3
+  order: 3
 }
 
 .orange {
   background: orange;
   flex-grow: 1;
-	order: 2
+  order: 2
 }
 
 .olive {
   background: olive;
-	order: 1
+  order: 1
 }
 
 .red {
   background: red;
   flex-grow: 1;
-	order: 0
+  order: 0
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    background: red;
+  }
+}
